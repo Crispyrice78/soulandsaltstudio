@@ -106,10 +106,23 @@
       <div class="md:col-span-2">
         <h3 class="text-2xl font-semibold" style="color:var(--aqua)">Payment options</h3>
         <p class="mt-3 text-slate-700">Enable PayPal and Stripe so students can pay the way they prefer. Replace the links below with live checkout links once accounts are ready.</p>
-        <div class="mt-5 flex flex-wrap gap-3">
-          <a class="px-4 py-2 rounded-xl text-white" style="background:var(--teal)" href="#">Pay with Stripe</a>
-          <a class="px-4 py-2 rounded-xl border" style="border-color:var(--teal)" href="#">Pay with PayPal</a>
-        </div>
+       <div class="mt-5 flex flex-wrap gap-3">
+  	<a class="px-4 py-2 rounded-xl text-white opacity-60 pointer-events-none"
+    	   style="background:var(--teal)" href="#" aria-disabled="true">
+    	Stripe checkout coming soon
+  </a>
+  <a class="px-4 py-2 rounded-xl border opacity-60 pointer-events-none"
+     style="border-color:var(--teal)" href="#" aria-disabled="true">
+    PayPal checkout coming soon
+  </a>
+</div>
+
+<p class="mt-3 text-sm text-slate-600">
+  Until online checkout is ready, use the
+  <a href="#contact" class="underline" style="color:var(--teal)">contact form</a>
+  to reserve a spot or ask questions.
+</p>
+
       </div>
       <div class="rounded-2xl p-4" style="background:var(--seafoam)">
         <h4 class="font-semibold">Setup checklist</h4>
