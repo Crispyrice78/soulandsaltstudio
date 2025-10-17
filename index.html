@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soul &amp; Salt Studio</title>
+  <meta name="description" content="Soul &amp; Salt Studio. Ocean inspired mixed media art and calming art classes.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --sand:#CDB499;
+      --seafoam:#B8C5B9;
+      --aqua:#8AA494;
+      --teal:#78AAA1;
+    }
+    .chip{ width:1.25rem; height:1.25rem; border-radius:999px; display:inline-block; }
+  </style>
+</head>
+<body class="min-h-screen bg-white text-slate-800">
+  <!-- Top bar -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="text-xl font-semibold tracking-wide" style="color:var(--teal)">Soul &amp; Salt Studio</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a class="hover:opacity-80" href="#about">About</a>
+        <a class="hover:opacity-80" href="#classes">Classes</a>
+        <a class="hover:opacity-80" href="#gallery">Gallery</a>
+        <a class="hover:opacity-80" href="#contact">Contact</a>
+      </nav>
+      <a href="#classes" class="md:inline-flex hidden px-4 py-2 rounded-2xl shadow-sm text-white" style="background:var(--teal)">Book a class</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative">
+    <div class="absolute inset-0" aria-hidden="true">
+      <div class="w-full h-full" style="background: radial-gradient(60% 60% at 20% 10%, var(--seafoam) 0%, rgba(184,197,185,0.2) 55%, transparent 70%), linear-gradient(180deg, rgba(120,170,161,0.25), rgba(255,255,255,1))"></div>
+    </div>
+    <div class="relative max-w-6xl mx-auto px-4 py-24 md:py-32">
+      <div class="max-w-2xl">
+        <h1 class="text-4xl md:text-6xl font-semibold leading-tight" style="color:var(--aqua)">Where creativity meets calm</h1>
+        <p class="mt-5 text-lg text-slate-700">Contemporary mixed media art inspired by the ocean. Classes designed to slow your breathing and wake up your hands.</p>
+        <div class="mt-8 flex gap-3">
+          <a href="#classes" class="px-5 py-3 rounded-2xl text-white" style="background:var(--teal)">Book a class</a>
+          <a href="#gallery" class="px-5 py-3 rounded-2xl border" style="border-color:var(--teal)">Explore the gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div class="rounded-2xl aspect-[4/3] bg-slate-100 flex items-center justify-center text-slate-400">
+        <span class="px-6 text-center">Add hero photo or resin artwork here</span>
+      </div>
+      <div>
+        <h2 class="text-3xl md:text-4xl font-semibold" style="color:var(--aqua)">About Angelika</h2>
+        <p class="mt-5 leading-7 text-slate-700">I am a contemporary mixed media artist whose work captures the beauty and tranquility of the ocean. Since beginning my journey in 2020, I have developed a distinctive style that combines organically sourced materials such as sand, shells, and rocks to create immersive oceanic scenes that evoke a sense of peace and connection to nature.</p>
+        <p class="mt-4 leading-7 text-slate-700">Driven by a passion for both art and mental health advocacy, I explore the therapeutic power of creative expression and its ability to foster emotional healing. I am expanding my practice by offering art classes so you can create ocean inspired work while experiencing the restorative benefits of making art.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Classes -->
+  <section id="classes" class="py-16 md:py-24" style="background:linear-gradient(180deg, rgba(205,180,153,0.12), rgba(255,255,255,1))">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="md:flex items-end justify-between gap-8">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-semibold" style="color:var(--aqua)">Classes</h2>
+          <p class="mt-4 max-w-2xl text-slate-700">Slow down, breathe, and make something beautiful. Beginner friendly. All materials provided unless noted.</p>
+        </div>
+        <div class="mt-6 md:mt-0 flex gap-3">
+          <a class="px-4 py-2 rounded-xl text-white" style="background:var(--teal)" href="#contact">Ask a question</a>
+          <a class="px-4 py-2 rounded-xl border" style="border-color:var(--teal)" href="#payments">Payment options</a>
+        </div>
+      </div>
+
+      <!-- Booking embed placeholder -->
+      <div class="mt-8 bg-white border rounded-2xl overflow-hidden shadow-sm">
+        <div class="aspect-[16/9] w-full bg-slate-50 flex items-center justify-center text-slate-400">
+          <span class="px-6 text-center">Embed YouCanBookMe here<br>Replace the iframe src with Angelika's booking URL</span>
+        </div>
+        <!-- Example embed. Replace the src value with the real booking link and remove the style on height if you prefer -->
+        <!--
+        <iframe
+          title="Book a class"
+          src="https://your-subdomain.youcanbook.me/"
+          class="w-full"
+          style="height:75vh; border:0;">
+        </iframe>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Payments -->
+  <section id="payments" class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+      <div class="md:col-span-2">
+        <h3 class="text-2xl font-semibold" style="color:var(--aqua)">Payment options</h3>
+        <p class="mt-3 text-slate-700">Enable PayPal and Stripe so students can pay the way they prefer. Replace the links below with live checkout links once accounts are ready.</p>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a class="px-4 py-2 rounded-xl text-white" style="background:var(--teal)" href="#">Pay with Stripe</a>
+          <a class="px-4 py-2 rounded-xl border" style="border-color:var(--teal)" href="#">Pay with PayPal</a>
+        </div>
+      </div>
+      <div class="rounded-2xl p-4" style="background:var(--seafoam)">
+        <h4 class="font-semibold">Setup checklist</h4>
+        <ul class="mt-2 space-y-1 text-sm">
+          <li>Connect Stripe account</li>
+          <li>Connect PayPal account</li>
+          <li>Link checkout to YouCanBookMe or confirmation email</li>
+          <li>Test both flows end to end</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-16 md:py-24" style="background:linear-gradient(180deg, rgba(120,170,161,0.08), rgba(255,255,255,1))">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-semibold" style="color:var(--aqua)">Gallery</h2>
+      <p class="mt-4 text-slate-700">A few favorite pieces. Swap the placeholders with real photos and titles. Add pricing if selling directly.</p>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="rounded-2xl overflow-hidden bg-slate-100 aspect-square flex items-center justify-center text-slate-400">Artwork 1</div>
+        <div class="rounded-2xl overflow-hidden bg-slate-100 aspect-square flex items-center justify-center text-slate-400">Artwork 2</div>
+        <div class="rounded-2xl overflow-hidden bg-slate-100 aspect-square flex items-center justify-center text-slate-400">Artwork 3</div>
+        <div class="rounded-2xl overflow-hidden bg-slate-100 aspect-square flex items-center justify-center text-slate-400">Artwork 4</div>
+        <div class="rounded-2xl overflow-hidden bg-slate-100 aspect-square flex items-center justify-center text-slate-400">Artwork 5</div>
+        <div class="rounded-2xl overflow-hidden bg-slate-100 aspect-square flex items-center justify-center text-slate-400">Artwork 6</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-semibold" style="color:var(--aqua)">Get in touch</h2>
+        <p class="mt-4 text-slate-700">Questions about classes, commissions, or available pieces. Send a note and I will reply soon.</p>
+        <div class="mt-6 flex gap-4 text-sm">
+          <a href="#" class="underline">Instagram</a>
+          <a href="#" class="underline">Facebook</a>
+          <span class="text-slate-400">Based in Utah</span>
+        </div>
+      </div>
+      <form class="bg-white border rounded-2xl p-6 shadow-sm">
+        <label class="block text-sm">Name
+          <input class="mt-1 w-full rounded-xl border p-3" placeholder="Your name">
+        </label>
+        <label class="block text-sm mt-4">Email
+          <input type="email" class="mt-1 w-full rounded-xl border p-3" placeholder="you@example.com">
+        </label>
+        <label class="block text-sm mt-4">Message
+          <textarea class="mt-1 w-full rounded-xl border p-3 h-32" placeholder="Tell me a bit about what you have in mind"></textarea>
+        </label>
+        <button type="button" class="mt-5 px-5 py-3 rounded-2xl text-white w-full" style="background:var(--teal)">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+      <p class="text-sm">&copy; <span id="year"></span> Soul &amp; Salt Studio</p>
+      <div class="flex items-center gap-2 text-sm">
+        <span class="opacity-60">Palette</span>
+        <span class="chip" title="#CDB499" style="background:var(--sand)"></span>
+        <span class="chip" title="#B8C5B9" style="background:var(--seafoam)"></span>
+        <span class="chip" title="#8AA494" style="background:var(--aqua)"></span>
+        <span class="chip" title="#78AAA1" style="background:var(--teal)"></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
