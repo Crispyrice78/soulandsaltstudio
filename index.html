@@ -6,18 +6,38 @@
   <title>Soul &amp; Salt Studio</title>
   <meta name="description" content="Soul &amp; Salt Studio. Ocean inspired mixed media art and calming art classes.">
   <script src="https://cdn.tailwindcss.com"></script>
-<style>
-  :root {
-  /* Ocean blues palette */
-  --teal: #1A8CA0;      /* Deep teal-blue for buttons and accents */
-  --aqua: #47B5D3;      /* Bright, clean blue for headers and highlights */
-  --seafoam: #D9F0F7;   /* Soft background blue, easy on the eyes */
-  --sand: #E2C9A3;      /* Subtle warm accent, for contrast */
-}
 
-</style>
+  <style>
+    :root {
+      /* Ocean blues palette */
+      --teal: #187AA3;      /* Deep teal-blue for buttons and accents */
+      --aqua: #3FB0D4;      /* Bright, clean blue for headers and highlights */
+      --seafoam: #D9F0F7;   /* Soft background blue, easy on the eyes */
+      --sand: #E2C9A3;      /* Subtle warm accent, for contrast */
+    }
 
+    /* Use theme colors more broadly */
+    .link-accent { color: var(--teal); }
+    .link-accent:hover { opacity:.8; }
+
+    .btn-primary { background:var(--teal); color:#fff; }
+    .btn-primary:hover { filter:brightness(0.95); }
+
+    .btn-outline { border-color:var(--teal); }
+    .btn-outline:hover { background-color:color-mix(in srgb, var(--teal) 8%, white); }
+
+    .section-soft {
+      background: linear-gradient(180deg, color-mix(in srgb, var(--aqua) 20%, white) 0%, #fff 100%);
+    }
+
+    /* Nice little chips in the footer */
+    .chip {
+      width: .9rem; height: .9rem; display:inline-block; border-radius:9999px;
+      border:1px solid rgb(226 232 240);
+    }
+  </style>
 </head>
+
 <body class="min-h-screen bg-white text-slate-800">
   <!-- Top bar -->
   <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200">
@@ -29,7 +49,7 @@
         <a class="hover:opacity-80" href="#gallery">Gallery</a>
         <a class="hover:opacity-80" href="#contact">Contact</a>
       </nav>
-      <a href="#classes" class="md:inline-flex hidden px-4 py-2 rounded-2xl shadow-sm text-white" style="background:var(--teal)">Book a class</a>
+      <a href="#classes" class="md:inline-flex hidden px-4 py-2 rounded-2xl shadow-sm btn-primary">Book a class</a>
     </div>
   </header>
 
@@ -51,8 +71,8 @@
         Contemporary mixed media art inspired by the ocean. Classes designed to slow your breathing and wake up your hands.
       </p>
       <div class="mt-8 flex gap-3">
-        <a href="#classes" class="px-5 py-3 rounded-2xl text-white" style="background:var(--teal)">Book a class</a>
-        <a href="#gallery" class="px-5 py-3 rounded-2xl border" style="border-color:var(--teal)">Explore the gallery</a>
+        <a href="#classes" class="px-5 py-3 rounded-2xl btn-primary">Book a class</a>
+	<a href="#gallery" class="px-5 py-3 rounded-2xl border btn-outline">Explore the gallery</a>
       </div>
     </div>
   </div>
@@ -88,7 +108,7 @@
 
 
   <!-- Classes -->
-  <section id="classes" class="py-16 md:py-24" style="background:linear-gradient(180deg, rgba(100,170,210,0.10), rgba(255,255,255,1))">
+  <section id="classes" class="py-16 md:py-24 section-soft">
     <div class="max-w-6xl mx-auto px-4">
       <div class="md:flex items-end justify-between gap-8">
         <div>
@@ -96,14 +116,14 @@
           <p class="mt-4 max-w-2xl text-slate-700">Slow down, breathe, and make something beautiful. Beginner friendly. All materials provided unless noted.</p>
 	  <p class="mt-2 text-sm text-slate-600">
           Online booking opens soon. Until then, use the
-  	  <a href="#contact" class="underline" style="color:var(--teal)">contact form</a>
+  	  <a href="#contact" class="underline link-accent">contact form</a>
           to ask a question or reserve a spot.
 </p>
 
         </div>
         <div class="mt-6 md:mt-0 flex gap-3">
-          <a class="px-4 py-2 rounded-xl text-white" style="background:var(--teal)" href="#contact">Ask a question</a>
-          <a class="px-4 py-2 rounded-xl border" style="border-color:var(--teal)" href="#payments">Payment options</a>
+          <a class="px-4 py-2 rounded-xl btn-primary" href="#contact">Ask a question</a>
+	  <a class="px-4 py-2 rounded-xl border btn-outline" href="#payments">Payment options</a>
         </div>
       </div>
 
@@ -171,7 +191,7 @@
 
 <p class="mt-3 text-sm text-slate-600">
   Until online checkout is ready, use the
-  <a href="#contact" class="underline" style="color:var(--teal)">contact form</a>
+  <a href="#contact" class="underline link-accent">contact form</a>
   to reserve a spot or ask questions.
 </p>
 
@@ -189,7 +209,7 @@
   </section>
 
   <!-- Gallery -->
-  <section id="gallery" class="py-16 md:py-24" style="background:linear-gradient(180deg, rgba(100,170,210,0.10), rgba(255,255,255,1))">
+  <section id="gallery" class="py-16 md:py-24 section-soft">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-semibold" style="color:var(--aqua)">Gallery</h2>
       <p class="mt-4 text-slate-700">A few favorite pieces.</p>
@@ -303,12 +323,13 @@
     <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
       <p class="text-sm">&copy; <span id="year"></span> Soul &amp; Salt Studio</p>
       <div class="flex items-center gap-2 text-sm">
-        <span class="opacity-60">Palette</span>
-        <span class="chip" title="#CDB499" style="background:var(--sand)"></span>
-        <span class="chip" title="#B8C5B9" style="background:var(--seafoam)"></span>
-        <span class="chip" title="#8AA494" style="background:var(--aqua)"></span>
-        <span class="chip" title="#78AAA1" style="background:var(--teal)"></span>
-      </div>
+  <span class="opacity-60">Palette</span>
+  <span class="chip" title="#E2C9A3" style="background:var(--sand)"></span>
+  <span class="chip" title="#D9F0F7" style="background:var(--seafoam)"></span>
+  <span class="chip" title="#47B5D3" style="background:var(--aqua)"></span>
+  <span class="chip" title="#1A8CA0" style="background:var(--teal)"></span>
+</div>
+
     </div>
   </footer>
 
