@@ -6,15 +6,16 @@
   <title>Soul &amp; Salt Studio</title>
   <meta name="description" content="Soul &amp; Salt Studio. Ocean inspired mixed media art and calming art classes.">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root{
-      --sand:#CDB499;
-      --seafoam:#B8C5B9;
-      --aqua:#8AA494;
-      --teal:#78AAA1;
-    }
-    .chip{ width:1.25rem; height:1.25rem; border-radius:999px; display:inline-block; }
-  </style>
+<style>
+  :root{
+    /* ocean-forward blues */
+    --teal:  #1F8FB7;   /* primary buttons/links (more blue than green) */
+    --aqua:  #5DBAD5;   /* headings, accents */
+    --seafoam:#BFE7EF;  /* light backgrounds, chips */
+    --sand:  #CDB499;   /* warm accent (keep for contrast) */
+  }
+</style>
+
 </head>
 <body class="min-h-screen bg-white text-slate-800">
   <!-- Top bar -->
@@ -32,49 +33,56 @@
   </header>
 
   <!-- Hero -->
-  <section id="home" class="relative">
-    <div class="absolute inset-0" aria-hidden="true">
-      <div class="w-full h-full" style="background: radial-gradient(60% 60% at 20% 10%, var(--seafoam) 0%, rgba(184,197,185,0.2) 55%, transparent 70%), linear-gradient(180deg, rgba(120,170,161,0.25), rgba(255,255,255,1))"></div>
-    </div>
-    <div class="relative max-w-6xl mx-auto px-4 py-24 md:py-32">
-      <div class="max-w-2xl">
-        <h1 class="text-4xl md:text-6xl font-semibold leading-tight" style="color:var(--aqua)">Where creativity meets calm</h1>
-        <p class="mt-5 text-lg text-slate-700">Contemporary mixed media art inspired by the ocean. Classes designed to slow your breathing and wake up your hands.</p>
-        <div class="mt-8 flex gap-3">
-          <a href="#classes" class="px-5 py-3 rounded-2xl text-white" style="background:var(--teal)">Book a class</a>
-          <a href="#gallery" class="px-5 py-3 rounded-2xl border" style="border-color:var(--teal)">Explore the gallery</a>
-        </div>
+<section id="home" class="relative" style="
+  background-image: url('images/seatlepic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+">
+  <div class="relative max-w-6xl mx-auto px-4 py-24 md:py-32 bg-white/75 backdrop-blur-sm rounded-3xl">
+    <div class="max-w-2xl">
+      <h1 class="text-4xl md:text-6xl font-semibold leading-tight" style="color:var(--aqua)">Where creativity meets calm</h1>
+      <p class="mt-5 text-lg text-slate-700">
+        Contemporary mixed media art inspired by the ocean. Classes designed to slow your breathing and wake up your hands.
+      </p>
+      <div class="mt-8 flex gap-3">
+        <a href="#classes" class="px-5 py-3 rounded-2xl text-white" style="background:var(--teal)">Book a class</a>
+        <a href="#gallery" class="px-5 py-3 rounded-2xl border" style="border-color:var(--teal)">Explore the gallery</a>
       </div>
     </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-16 md:py-24">
-    <div class="md:flex items-center gap-8">
-  <img src="images/resinWAK.jpg" alt="Resin artwork by Angelika" class="w-full md:w-[45%] h-auto max-h-[400px] rounded-2xl shadow-md object-contain">
-
-  <div class="md:w-1/2">
-    <h2 class="text-3xl md:text-4xl font-semibold" style="color:var(--aqua)">About Angelika</h2>
-    <p class="mt-5 leading-7 text-slate-700">
-      I am a contemporary mixed media artist whose work captures the beauty and tranquility of the ocean. 
-      Since beginning my journey in 2020, I have developed a distinctive style that combines organically 
-      sourced materials such as sand, shells, and rocks to create immersive oceanic scenes that evoke a sense of peace 
-      and connection to nature.
-    </p>
-    <p class="mt-4 leading-7 text-slate-700">
-      Driven by a passion for both art and mental health advocacy, I explore the therapeutic power of creative 
-      expression and its ability to foster emotional healing. I am expanding my practice by offering art classes 
-      so you can create ocean-inspired work while experiencing the restorative benefits of making art.
-    </p>
   </div>
-</div>
+</section>
 
-      </div>
+
+ <!-- About -->
+<section id="about" class="py-16 md:py-24">
+  <div class="max-w-6xl mx-auto px-4 md:flex items-center gap-10">
+    <img
+      src="images/resinWAK.jpg"
+      alt="Resin artwork by Angelika"
+      class="w-full md:w-[42%] h-auto max-h-[420px] rounded-2xl object-contain"
+    >
+    <div class="md:w-[58%]">
+      <h2 class="text-3xl md:text-4xl font-semibold" style="color:var(--aqua)">About Angelika</h2>
+      <p class="mt-5 leading-7 text-slate-700">
+        I am a contemporary mixed media artist whose work captures the beauty and tranquility of the ocean. 
+        Since beginning my journey in 2020, I have developed a distinctive style that combines organically 
+        sourced materials such as sand, shells, and rocks to create immersive oceanic scenes that evoke a sense of peace 
+        and connection to nature.
+      </p>
+      <p class="mt-4 leading-7 text-slate-700">
+        Driven by a passion for both art and mental health advocacy, I explore the therapeutic power of creative 
+        expression and its ability to foster emotional healing. I am expanding my practice by offering art classes 
+        so you can create ocean-inspired work while experiencing the restorative benefits of making art.
+      </p>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Classes -->
-  <section id="classes" class="py-16 md:py-24" style="background:linear-gradient(180deg, rgba(205,180,153,0.12), rgba(255,255,255,1))">
+  <section id="classes" class="py-16 md:py-24" style="background:linear-gradient(180deg, rgba(100,170,210,0.10), rgba(255,255,255,1))">
     <div class="max-w-6xl mx-auto px-4">
       <div class="md:flex items-end justify-between gap-8">
         <div>
@@ -175,7 +183,7 @@
   </section>
 
   <!-- Gallery -->
-  <section id="gallery" class="py-16 md:py-24" style="background:linear-gradient(180deg, rgba(120,170,161,0.08), rgba(255,255,255,1))">
+  <section id="gallery" class="py-16 md:py-24" style="background:linear-gradient(180deg, rgba(100,170,210,0.10), rgba(255,255,255,1))">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-semibold" style="color:var(--aqua)">Gallery</h2>
       <p class="mt-4 text-slate-700">A few favorite pieces.</p>
