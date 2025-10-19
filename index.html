@@ -23,12 +23,19 @@
     .btn-primary { background:var(--teal); color:#fff; }
     .btn-primary:hover { filter:brightness(0.95); }
 
-    .btn-outline { border-color:var(--teal); }
-    .btn-outline:hover { background-color:color-mix(in srgb, var(--teal) 8%, white); }
+    .btn-outline { border-color: var(--teal); color: var(--teal); }
+    .btn-outline:hover { background-color: rgba(24,122,163,0.08); }
+
 
     .section-soft {
-      background: linear-gradient(180deg, color-mix(in srgb, var(--aqua) 20%, white) 0%, #fff 100%);
-    }
+  /* soft ocean tint → white (no color-mix) */
+  	background: linear-gradient(
+   	 180deg,
+   	 rgba(63,176,212,0.15) 0%,
+    	#ffffff 100%
+  );
+}
+
 
     /* Nice little chips in the footer */
     .chip {
@@ -296,8 +303,8 @@
         <h2 class="text-3xl md:text-4xl font-semibold" style="color:var(--aqua)">Get in touch</h2>
         <p class="mt-4 text-slate-700">Questions about classes, commissions, or available pieces. Send a note and I will reply soon.</p>
         <div class="mt-6 flex gap-4 text-sm">
-          <a href="#" class="underline">Instagram</a>
-          <a href="#" class="underline">Facebook</a>
+	  <a href="#" class="underline link-accent">Instagram</a>
+          <a href="#" class="underline link-accent">Facebook</a>
 	  <a href="mailto:Soulandsaltstudio@gmail.com" class="underline">Soulandsaltstudio@gmail.com</a><br>
 
           <span class="text-slate-400">Based in Utah</span>
