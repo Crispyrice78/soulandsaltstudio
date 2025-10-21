@@ -43,6 +43,11 @@
       border:1px solid rgb(226 232 240);
     }
   </style>
+<!-- Stripe public key (safe to include) -->
+<script>
+  window.STRIPE_PUBLISHABLE_KEY = "pk_live_51SJEcfF1wXtmiphpR50p96jDifwPiumRCpZWoImvAMJwr6e1lj4ocmawvD7EvkpyAagiqM6uHS9R9oVUjQlN52IM00nChtdWyA";
+</script>
+
 </head>
 
 <body class="min-h-screen bg-white text-slate-800">
@@ -52,7 +57,7 @@
       <a href="#home" class="text-xl font-semibold tracking-wide" style="color:var(--teal)">Soul &amp; Salt Studio</a>
       <nav class="hidden md:flex gap-6 text-sm">
         <a class="hover:opacity-80" href="#about">About</a>
-        <a class="hover:opacity-80" href="#classes">Classes</a>
+        <a class="hover:opacity-80" href="#class-types">Classes</a>
         <a class="hover:opacity-80" href="#gallery">Gallery</a>
         <a class="hover:opacity-80" href="#contact">Contact</a>
       </nav>
@@ -135,47 +140,133 @@
       </div>
 
       <!-- Booking embed placeholder -->
-      <div class="mt-8 bg-white border rounded-2xl overflow-hidden shadow-sm">
-        <div class="aspect-[16/9] w-full bg-slate-50 flex items-center justify-center text-slate-400">
-          <span class="px-6 text-center">Embed YouCanBookMe here<br>Replace the iframe src with Angelika's booking URL</span>
-        </div>
-        <!-- Example embed. Replace the src value with the real booking link and remove the style on height if you prefer -->
-        <!--
-        <iframe
-          title="Book a class"
-          src="https://your-subdomain.youcanbook.me/"
-          class="w-full"
-          style="height:75vh; border:0;">
-        </iframe>
-        -->
-      </div>
+      <div class="mt-8">
+  <a class="px-4 py-2 rounded-xl btn-primary" href="#class-types">See class options</a>
+</div>
+
     </div>
   </section>
 <!-- Types of Classes Offered -->
-<section id="class-types" class="py-12 bg-white">
+<!-- Class details with booking buttons -->
+<section id="class-types" class="py-16 bg-white">
   <div class="max-w-6xl mx-auto px-4">
-    <h3 class="text-2xl font-semibold" style="color:var(--aqua)">Types of Classes Offered</h3>
-    <p class="mt-2 text-slate-600">Choose from different class types. Each link will lead to its own booking page once those are ready.</p>
+    <h2 class="text-3xl md:text-4xl font-semibold" style="color:var(--aqua)">Classes</h2>
+    <p class="mt-3 text-slate-700">Pick a class and book your spot. All materials provided. No experience needed.</p>
+    <div class="mt-6 flex flex-wrap gap-3">
+  <a href="#cutting-board" class="px-4 py-2 rounded-xl btn-outline">Cutting Boards</a>
+  <a href="#wall-art" class="px-4 py-2 rounded-xl btn-outline">Wall Art</a>
+  <a href="#ornaments" class="px-4 py-2 rounded-xl btn-outline">Festive Ornaments</a>
+</div>
 
-    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
 
-      <a href="#" class="block border rounded-2xl p-6 shadow-sm hover:shadow-md transition">
-        <h4 class="text-lg font-semibold text-slate-800">Wall Art</h4>
-        <p class="text-sm text-slate-600 mt-1">Create your own resin ocean wall piece. Beginner friendly.</p>
-      </a>
+    <!-- Cutting Boards -->
+      <div id="cutting-board" class="mt-10 grid md:grid-cols-2 gap-8 items-start">
+      <img src="images/resin10.jpg" alt="Ocean resin cutting board example" class="w-full rounded-2xl shadow-sm object-cover aspect-[4/3]">
+      <div>
+        <h3 class="text-2xl font-semibold text-slate-800">Cutting Board Class</h3>
+        <p class="mt-3 leading-7 text-slate-700">
+          Bring the beauty of the sea to your kitchen! In this hands-on class, you'll design and create your own
+          ocean-inspired resin cutting board. Using vibrant ocean hues and organic materials like shells and sand,
+          you'll learn techniques to create a one-of-a-kind functional art piece that captures the movement and
+          serenity of the shoreline. No experience is needed—just come ready to create, relax, and have fun!
+          All materials are included, and you'll leave with a stunning cutting board that's perfect for display
+          or entertaining.
+        </p>
+        <div class="mt-5">
+          <!-- YCB button (Cutting Boards) -->
+          <script src="https://embed.ycb.me" async="true"
+                  data-domain="soulandsaltstudio"
+                  data-type="button-link"
+                  data-innertext="Join the Fun"
+                  data-buttoncolor="#44FFF6"
+                  data-displaymode="auto"></script>
+<noscript>
+  <a class="px-4 py-2 rounded-xl border btn-outline inline-block mt-3"
+     href="https://soulandsaltstudio.youcanbook.me/" target="_blank" rel="noopener">
+    Book now (opens YouCanBookMe)
+  </a>
+</noscript>
+<a class="px-4 py-2 rounded-xl border btn-outline inline-block mt-3"
+   href="https://soulandsaltstudio.youcanbook.me/" target="_blank" rel="noopener">
+  Book now
+</a>
 
-      <a href="#" class="block border rounded-2xl p-6 shadow-sm hover:shadow-md transition">
-        <h4 class="text-lg font-semibold text-slate-800">Cutting Boards</h4>
-        <p class="text-sm text-slate-600 mt-1">Make a resin wave cutting board. All materials provided.</p>
-      </a>
-
-      <a href="#" class="block border rounded-2xl p-6 shadow-sm hover:shadow-md transition">
-        <h4 class="text-lg font-semibold text-slate-800">Custom Commissions</h4>
-        <p class="text-sm text-slate-600 mt-1">Schedule time to discuss a one-of-a-kind custom piece.</p>
-      </a>
-
+        </div>
+      </div>
     </div>
+
+
+    <!-- Wall Art -->
+      <div id="wall-art" class="pt-10 grid md:grid-cols-2 gap-8 items-center border-b pb-10">
+      <img src="images/resin6.jpg" alt="Ocean resin wall art example" class="w-full rounded-2xl shadow-sm object-cover aspect-[4/3]">
+      <div>
+        <h3 class="text-2xl font-semibold text-slate-800">Wall Art Class</h3>
+        <p class="mt-3 leading-7 text-slate-700">
+          Dive into creativity as you design your own ocean-inspired wall hanging! In this immersive art class,
+          you'll create a stunning ocean scene using resin, sand, shells, and other natural elements. Learn how
+          to layer color, texture, and movement to bring the beauty of the sea to life. No experience needed—just
+          come ready to relax, explore and create. All materials are provided, and you'll leave with a gorgeous
+          piece of coastal art to hang in your home or give as a meaningful gift.
+        </p>
+        <div class="mt-5">
+          <!-- YCB button (Wall Art) -->
+          <script src="https://embed.ycb.me" async="true"
+                  data-domain="soulandsaltstudio-0"
+                  data-type="button-link"
+                  data-innertext="Join the Fun"
+                  data-buttoncolor="#44FFF6"
+                  data-displaymode="auto"></script>
+<noscript>
+  <a class="px-4 py-2 rounded-xl border btn-outline inline-block mt-3"
+     href="https://soulandsaltstudio-0.youcanbook.me/" target="_blank" rel="noopener">
+    Book now (opens YouCanBookMe)
+  </a>
+</noscript>
+<a class="px-4 py-2 rounded-xl border btn-outline inline-block mt-3"
+   href="https://soulandsaltstudio-0.youcanbook.me/" target="_blank" rel="noopener">
+  Book now
+</a>
+
+        </div>
+      </div>
+    </div>
+
+	<!-- Festive Ornaments -->
+      <div id="ornaments" class="pt-10 grid md:grid-cols-2 gap-8 items-center">
+      <img src="images/resin19.jpg" alt="Holiday resin ornaments example" class="w-full rounded-2xl shadow-sm object-cover aspect-[4/3]">
+      <div>
+        <h3 class="text-2xl font-semibold text-slate-800">Festive Ornaments</h3>
+        <p class="mt-3 leading-7 text-slate-700">
+          Join us for a fun and creative class where you'll learn step-by-step instructions to design two of your
+          own beautiful, handcrafted ornaments! Whether you're adding a personal touch to your holiday décor or
+          creating heartfelt gifts, this hands-on workshop—using glitters, resin, and jewels—lets your imagination
+          shine. All materials are provided—just bring your creativity and holiday spirit! Perfect for all skill levels.
+        </p>
+        <div class="mt-5">
+          <!-- YCB button (Festive Ornaments) -->
+          <script src="https://embed.ycb.me" async="true"
+                  data-domain="soulandsaltstudio-69"
+                  data-type="button-link"
+                  data-innertext="Join the Fun"
+                  data-buttoncolor="#44FFF6"
+                  data-displaymode="auto"></script>
+<noscript>
+  <a class="px-4 py-2 rounded-xl border btn-outline inline-block mt-3"
+     href="https://soulandsaltstudio-69.youcanbook.me/" target="_blank" rel="noopener">
+    Book now (opens YouCanBookMe)
+  </a>
+</noscript>
+<a class="px-4 py-2 rounded-xl border btn-outline inline-block mt-3"
+   href="https://soulandsaltstudio-69.youcanbook.me/" target="_blank" rel="noopener">
+  Book now
+</a>
+
+        </div>
+      </div>
+    </div>
+
   </div>
+</section>
 </section>
 
 
@@ -186,21 +277,49 @@
         <h3 class="text-2xl font-semibold" style="color:var(--aqua)">Payment options</h3>
         <p class="mt-3 text-slate-700">Enable PayPal and Stripe so students can pay the way they prefer. Replace the links below with live checkout links once accounts are ready.</p>
        <div class="mt-5 flex flex-wrap gap-3">
-  	<a class="px-4 py-2 rounded-xl text-white opacity-60 pointer-events-none"
-    	   style="background:var(--teal)" href="#" aria-disabled="true">
-    	Stripe checkout coming soon
+  <!-- Stripe Payment Link (replace URL when ready) -->
+  <a class="px-4 py-2 rounded-xl btn-primary"
+     href="https://buy.stripe.com/your-payment-link"
+     target="_blank" rel="noopener">
+    Pay with card (Stripe)
   </a>
-  <a class="px-4 py-2 rounded-xl border opacity-60 pointer-events-none"
-     style="border-color:var(--teal)" href="#" aria-disabled="true">
-    PayPal checkout coming soon
+
+  <!-- PayPal.me (replace handle if different) -->
+  <a class="px-4 py-2 rounded-xl border btn-outline"
+     href="https://paypal.me/SoulAndSaltStudio"
+     target="_blank" rel="noopener">
+    Pay with PayPal
   </a>
 </div>
+
 
 <p class="mt-3 text-sm text-slate-600">
   Until online checkout is ready, use the
   <a href="#contact" class="underline link-accent">contact form</a>
   to reserve a spot or ask questions.
 </p>
+
+
+<!-- Venmo Payment Option -->
+<div class="mt-6 bg-white border rounded-2xl p-5 shadow-sm text-center">
+  <div class="flex justify-center items-center gap-2">
+    
+    <h4 class="text-xl font-semibold" style="color:var(--aqua)">Pay via Venmo</h4>
+  </div>
+  <p class="mt-2 text-slate-700">
+    Prefer to pay directly? You can send payment securely through Venmo.
+  </p>
+  <p class="mt-1 text-slate-600">
+    Venmo Username: <strong>@Angelika-Price</strong>
+  </p>
+  <div class="mt-4 flex justify-center">
+    <img src="images/venmo.jpg" alt="Venmo QR Code for Angelika Price" class="w-48 h-48 rounded-2xl border shadow-sm object-contain">
+  </div>
+  <p class="mt-2 text-sm text-slate-500">
+    Scan the QR code above or search <strong>@Angelika-Price</strong> in the Venmo app.
+  </p>
+</div>
+
 
       </div>
       <div class="rounded-2xl p-4" style="background:var(--seafoam)">
