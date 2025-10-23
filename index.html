@@ -107,22 +107,31 @@ h1, h2, h3, h4, h5, h6, .logo-text {
   </header>
 
   <!-- Hero -->
-<section id="home" class="py-16 md:py-24 bg-white text-center">
-  <!-- Optional light blue banner at top -->
-  
-  </div>
-
-  <div class="max-w-4xl mx-auto px-4 mt-8">
+<section id="home" class="relative text-center"
+  style="
+    background-image:
+      linear-gradient(rgba(255,255,255,0.70), rgba(255,255,255,0.85)),
+      url('images/ocean.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 600px;
+  "
+>
+  <div class="max-w-4xl mx-auto px-4 py-20 md:py-28">
     <!-- Logo front and center -->
-<img src="images/logo.jpg" 
-     alt="Soul & Salt Studio Logo" 
-     class="mx-auto w-[26rem] md:w-[32rem] h-auto mb-6">
+    <img
+      src="images/logo.jpg"
+      alt="Soul & Salt Studio Logo"
+      class="mx-auto w-[26rem] md:w-[32rem] h-auto mb-6"
+    />
 
-
-
-    <!-- Optional short tagline -->
-    <p class="text-lg text-slate-700">
-      Welcome to Soul & Salt Studio, where ocean-inspired resin art meets calm creativity. Each piece is a blend of fluid motion and mindful artistry — designed to bring the serenity of the sea into your home and spark a sense of peaceful creation within you.
+    <!-- Optional short tagline (on a soft card for readability) -->
+    <p class="text-lg text-slate-700 bg-white/70 backdrop-blur-sm rounded-2xl p-4 inline-block">
+      Welcome to Soul & Salt Studio, where ocean-inspired resin art meets calm creativity.
+      Each piece is a blend of fluid motion and mindful artistry — designed to bring the
+      serenity of the sea into your home and spark a sense of peaceful creation within you.
     </p>
   </div>
 </section>
