@@ -57,33 +57,32 @@ h1, h2, h3, h4, h5, h6, .logo-text {
       border:1px solid rgb(226 232 240);
     }
 /* Navbar underline animation */
-header nav a {
-  font-weight: 600;
-  position: relative;
-  padding-bottom: 4px;
-  color: var(--teal);
-  transition: color 0.3s ease;
-}
+    header nav a {
+      font-weight: 600;
+      position: relative;
+      padding-bottom: 4px;
+      color: var(--teal);
+      transition: color 0.3s ease;
+    }
 
-header nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--teal);
-  transition: width 0.3s ease;
-}
+    header nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--teal);
+      transition: width 0.3s ease;
+    }
 
-header nav a:hover::after {
-  width: 100%;
-}
+    header nav a:hover::after {
+      width: 100%;
+    }
 
-header nav a:hover {
-  color: var(--aqua);
-}
-
+    header nav a:hover {
+      color: var(--aqua);
+    }
   </style>
 <!-- Stripe public key (safe to include) -->
 <script>
@@ -115,7 +114,10 @@ header nav a:hover {
 
   <div class="max-w-4xl mx-auto px-4 mt-8">
     <!-- Logo front and center -->
-    <img src="images/logo.jpg" alt="Soul & Salt Studio logo" class="mx-auto w-64 md:w-80 mb-6">
+     <img src="images/soulandsaltlogo.jpg" 
+     alt="Soul & Salt Studio Logo" 
+     class="mx-auto w-80 md:w-96 h-auto mb-6">
+
 
     <!-- Optional short tagline -->
     <p class="text-lg text-slate-700">
