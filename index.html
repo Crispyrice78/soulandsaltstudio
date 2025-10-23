@@ -56,6 +56,34 @@ h1, h2, h3, h4, h5, h6, .logo-text {
       width: .9rem; height: .9rem; display:inline-block; border-radius:9999px;
       border:1px solid rgb(226 232 240);
     }
+/* Navbar underline animation */
+header nav a {
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 4px;
+  color: var(--teal);
+  transition: color 0.3s ease;
+}
+
+header nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--teal);
+  transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
+
+header nav a:hover {
+  color: var(--aqua);
+}
+
   </style>
 <!-- Stripe public key (safe to include) -->
 <script>
