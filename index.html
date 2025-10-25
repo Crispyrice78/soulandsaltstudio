@@ -109,6 +109,24 @@ h1, h2, h3, h4, h5, h6, .logo-text {
     background-size: cover;
   }
 }
+html {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.95)), /* soft readability veil */
+    url('images/ocean.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Mobile (iOS ignores fixed backgrounds) */
+@media (max-width: 640px) {
+  html {
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+  }
+}
 
   </style>
 <!-- Stripe public key (safe to include) -->
@@ -331,7 +349,7 @@ h1, h2, h3, h4, h5, h6, .logo-text {
 
 
   <!-- Payments -->
-  <section id="home" class="py-16 md:py-24 text-center">
+ 
   <div class="max-w-3xl mx-auto px-4">
       <div class="md:col-span-2">
         <h3 class="text-2xl font-semibold" style="color:var(--aqua)">Payment options</h3>
